@@ -1,6 +1,6 @@
 import streamlit
 import pandas
-
+import requests
 
 
 # Display the table on the page.
@@ -24,3 +24,5 @@ streamlit.text('🥑🍞 Avocado Toast')
 streamlit.header('🍌🥭 Build Your Own Fruit Smoothie 🥝🍇')
 streamlit.dataframe(fruit_to_show)
 
+fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
+streamlit.text(fruityvice_response)
