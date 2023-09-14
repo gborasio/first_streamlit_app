@@ -1,7 +1,7 @@
 import streamlit
 import pandas
 import requests
-
+import snoflake.connector
 
 # Display the table on the page.
 
